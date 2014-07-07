@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Juggling Simone</title>
+	<link rel="stylesheet" href="lib/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-tagsinput.css">
+	<link rel="stylesheet" href="css/simone.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Juggling Simone</h1>
+			<h3>Audible Randomizer</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-xs-12 settings">
+				<div class="input">
+					<label for="items">Randomize</label><span class="error" for="items"></span>
+					<select multiple class="form-control" data-role="tagsinput" id="items">
+					</select>
+				</div>
+				<div class="input">
+					<label for="delay">Start Delay (s)</label><span class="error" for="delay"></span>
+					<input type="text" class="form-control integer" id="delay">
+				</div>
+				<div class="input">
+					<label for="minInterval">Minimum Interval (s)</label><span class="error" for="minInterval"></span>
+					<input type="text" class="form-control integer" id="minInterval">
+				</div>
+				<div class="input">
+					<label for="maxInterval">Maximum Interval (s)</label><span class="error" for="maxInterval"></span>
+					<input type="text" class="form-control integer" id="maxInterval">
+				</div>
+				<button type="button" class="btn btn-success btn-block" id="trigger">Start</button>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<label>Juggle This</label>
+				<a role="button" id="clear">clear</a>
+				<div id="output"></div>
+			</div>
+		</div>
+	</div>
+	<div class="hidden" id="audio"></div>
+	<script src="lib/js/jquery.js"></script>
+	<script src="lib/js/bootstrap.js"></script>
+	<script src="lib/js/bootstrap-tagsinput.js"></script>
+	<script src="lib/js/random.js"></script>
+	<script type="text/javascript" src="js/simone.js"></script>
+</body>
+</html>

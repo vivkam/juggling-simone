@@ -1,0 +1,25 @@
+{
+  "name": "juggling-simone",
+  "version": "0.1",
+  "authors": [
+    "vivkam <otherviv@gmail.com>"
+  ],
+  "description": "Audible Shuffler",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://blime.net/juggling-simone",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.2.0",
+    "bootstrap-tagsinput": "0.3.9",
+    "random": "1.0.4"
+  }
+}

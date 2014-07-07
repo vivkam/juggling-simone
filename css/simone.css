@@ -1,0 +1,45 @@
+body {
+	padding : 10px;
+}
+
+.jumbotron {
+	background-image: url('../img/jumbotron-balls.png');
+	color : white;
+}
+
+.settings {
+	padding-bottom : 25px;
+}
+
+.settings .input {
+	padding-bottom : 10px;
+}
+
+.bootstrap-tagsinput {
+	width : 100%;
+	margin-bottom : 0px;
+}
+
+.error {
+	float : right;
+	color : red;
+}
+
+#clear {
+	float : right;
+	cursor : pointer;
+}
+
+#output {
+	border : 1px solid #CCC;
+	border-radius : 4px;
+	box-shadow : inset 0 1px 1px rgba(0, 0, 0, .075);
+	height : 300px;
+	padding : 5px;
+	background-color : #EEE;
+	overflow : scroll;
+}
+
+#trigger {
+	margin-top : 15px;
+}
