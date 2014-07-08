@@ -111,6 +111,7 @@ simone = {
     items.forEach(function (item) {
       if ($('audio[item="' + item + '"]').length === 0) {
         audioDiv.append('<audio item="' + item + '" src="' + src + item + '" preload="auto">');
+        audioDiv.children('[item=' + item + ']').on('ended', function () { this.load(); });
       }
     });
   },
