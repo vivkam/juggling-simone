@@ -7,7 +7,7 @@
   "description": "Audible Shuffler",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "http://blime.net/juggling-simone",
+  "homepage": "http://blime.net/simone",
   "private": true,
   "ignore": [
     "**/.*",
