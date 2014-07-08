@@ -2,9 +2,16 @@ body {
 	padding : 10px;
 }
 
-.jumbotron {
-	background-image: url('../img/jumbotron-balls.png');
+.skinnytron {
+	margin-bottom : 30px;
+	border-radius : 4px;
+	padding : 15px;
+	background-color : darkviolet;
 	color : white;
+}
+
+.skinnytron h1 {
+	margin : 0px;
 }
 
 .settings {

@@ -21,7 +21,7 @@ module.exports = function (grunt) {
         ]
       },
       dist : {
-        src : [ 'index.html' , 'tts.php' , 'css/**' , 'img/**' , 'js/**' , 'lib/**' ],
+        src : [ 'index.html' , 'tts.php' , 'css/**' , 'js/**' , 'lib/**' ],
         dest : 'dist/'
       }
     },
