@@ -21,8 +21,18 @@ module.exports = function (grunt) {
         ]
       },
       dist : {
-        src : [ 'index.html' , 'css/**' , 'img/**' , 'js/**' , 'lib/**' ],
+        src : [ 'index.html' , 'tts.php' , 'css/**' , 'img/**' , 'js/**' , 'lib/**' ],
         dest : 'dist/'
+      }
+    },
+    replace : {
+      dist : {
+        src : 'js/simone.js',
+        dest : 'dist/js/simone.js',
+        replacements : [{
+          from : /src = '.*'/,
+          to : "src = 'tts.php?text='"
+        }]
       }
     }
   });
@@ -30,7 +40,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-bower-install-simple');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-text-replace');
 
   grunt.registerTask('default', [ 'clean:bower' , 'clean:dev' , 'bower-install-simple' , 'copy:dev' , 'clean:bower' ]);
-  grunt.registerTask('dist', [ 'default' , 'clean:dist' , 'copy:dist' ]);
+  grunt.registerTask('dist', [ 'default' , 'clean:dist' , 'copy:dist' , 'replace:dist' ]);
 };

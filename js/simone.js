@@ -106,10 +106,11 @@ simone = {
     $('audio[item="' + item + '"]')[0].play();
   },
   loadAudio : function (items) {
-    var audioDiv = $('#audio');
+    var audioDiv = $('#audio')
+      , src = 'http://translate.google.com/translate_tts?tl=en&q=';
     items.forEach(function (item) {
       if ($('audio[item="' + item + '"]').length === 0) {
-        audioDiv.append('<audio item="' + item + '" src="http://translate.google.com/translate_tts?tl=en&q=' + item + '" preload="auto">');
+        audioDiv.append('<audio item="' + item + '" src="' + src + item + '" preload="auto">');
       }
     });
   },
